@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Categorizer</title>
+</head>
+<body>
+    <h2>AI-Powered Expense Categorizer</h2>
+    <form method="POST">
+        <label>Enter Expense Description:</label><br><br>
+        <input type="text" name="description" required><br><br>
+        <input type="submit" value="Categorize"><br><br>
+    </form>
+    {% if category %}
+        <h3>Predicted Category: {{ category }}</h3>
+    {% endif %}
+</body>
+</html>
